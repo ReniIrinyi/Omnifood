@@ -15,9 +15,13 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
+
    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- optimization smooth scrolling on safari -->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" ></script>
+    <script defer src="js/script.js"></script>
     <title>Omnifood</title>
   </head>
   <body>
@@ -29,11 +33,11 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a class="main-nav-link" href="#"> How it Works</a> </li>
-            <a class="main-nav-link" href="#"> Meals</a> </li>
-            <a class="main-nav-link" href="#"> Testimonials</a> </li>
-            <a class="main-nav-link" href="#"> Pricing</a> </li>
-            <a class="main-nav-link nav-cta" href="#"> Try it for free</a> </li>
+            <a class="main-nav-link" href="#section--how"> How it Works</a> </li>
+            <a class="main-nav-link" href="#section--meals"> Meals</a> </li>
+            <a class="main-nav-link" href="#section--testimonials"> Testimonials</a> </li>
+            <a class="main-nav-link" href="#section--pricing"> Pricing</a> </li>
+            <a class="main-nav-link nav-cta" href="#cta"> Try it for free</a> </li>
         </ul>
         
       </nav>
@@ -58,9 +62,9 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#section--how" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-faces">
                 <img src="img/customers/customer-1.jpg" alt="Customer photo" />
@@ -100,7 +104,7 @@
 </section>
 
       <!-- HOW SECTION -->
-      <section class="section-how ">
+      <section class="section-how " id="section--how">
         <div class="container">
           <span class="subheading margin-bottom-md">How it works</span>
           <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -153,7 +157,7 @@
 
       <!-- SECTION MEALS -->
 
-      <section class="section-meals" >
+      <section class="section-meals" id="section--meals">
         <div class="container center-text">
           <span class="subheading margin-bottom-md">Meals</span>
           <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -287,7 +291,7 @@
       </section>
 
       <!-- TESTIMONIALS SECTION -->
-<section class="section-testimonials ">
+<section class="section-testimonials " id="section--testimonials">
 <div class="testimonials-container">
 
   <span class="subheading margin-bottom-md">Testimonials</span>
@@ -386,7 +390,7 @@
 </section>
 
 
-<section class="section-pricing" >
+<section class="section-pricing" id="section--pricing">
   <div class="container ">
     <span class="subheading ">Pricing</span>
     <h2 class="heading-secondary">Eating well without breaking the bank</h2>
@@ -443,7 +447,7 @@
     </ul>
     <div class="plan-sing-up">
 
-      <a href="#" class="btn btn--full"
+      <a href="#" class="btn btn--full" id="cta"
       >Start eating well</a >
     </div>
     
@@ -565,7 +569,7 @@
 </ul>
 
 <p class="copyright">
-  copyright &copy; 2027 by Omnifood Inc. All rights reserved. 
+  copyright &copy; <span class="year"> 2027</span> by Omnifood Inc. All rights reserved. 
 
 </p>
 

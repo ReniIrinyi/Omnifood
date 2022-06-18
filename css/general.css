@@ -54,6 +54,8 @@ html {
   /* minden element (rejtett nav-menu jobbra/balra) hidden*/
   /* csak akkor mukodik ha nincs absolute positionalt a body-hoz */
   overflow-x: hidden;
+  /* on Safari-nem müködik=> JS */
+  /* scroll-behavior: smooth; */
 }
 body {
   font-family: "Rubik", sans-serif;

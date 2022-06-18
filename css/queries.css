@@ -121,6 +121,8 @@
   /* MOBILE NAV */
   .btn-mobile-nav {
     display: block;
+    /* biztos hogy a toppon legyen */
+    z-index: 100;
   }
 
   .main-nav {
