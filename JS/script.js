@@ -60,7 +60,7 @@ const obs = new IntersectionObserver(
 obs.observe(sectionHero); //1.ezt akarjuk figyelni
 
 ///////////////////////////////////////////////////////////
-// Fixing flexbox gap property =>missing in some Safari versions
+// Fixing flexbox gap property in Safari
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
@@ -79,7 +79,7 @@ function checkFlexGap() {
 }
 checkFlexGap();
 
-/*
+/* => css queries
   .no-flexbox-gap .main-nav-list li:not(:last-child) {
     margin-right: 4.8rem;
   }
